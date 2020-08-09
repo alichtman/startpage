@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>alichtman@arctic > startpage</title>
+
+  <style>
+    html {
+      align-items: center;
+      background-color: #f7eee4;
+      color: #c5c8c6;
+      display: flex;
+      font: 22px/1 "Inconsolata", monospace;
+      height: 100%;
+      justify-content: center;
+    }
+
+    body {
+      background-color: #1d1f21;
+      border-radius: 2px;
+      box-shadow: 1px 1px 6px #1d1f2187;
+      color: #c5c8c6;
+      display: flex;
+      flex-direction: column;
+      min-height: 30ch;
+      min-width: 50vw;
+      padding: 2em;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p span {
+      color: #b5bd68;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      column-gap: 2em;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 1em 0;
+    }
+
+    ul:nth-child(1n) li:first-child {
+      color: #a54242;
+    }
+
+    ul:nth-child(2n) li:first-child {
+      color: #de935f;
+    }
+
+    ul:nth-child(3n) li:first-child {
+      color: #f0c674;
+    }
+
+    ul:nth-child(4n) li:first-child {
+      color: #8c9440;
+    }
+
+    ul:nth-child(5n) li:first-child {
+      color: #85678f;
+    }
+
+    li:first-child {
+      font-weight: bold;
+    }
+
+    li:last-child {
+      margin: 0 0 1em;
+    }
+
+    p #cursor {
+      background-color: #b5bd68;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0; }
+      49% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <p><span>alichtman@arctic > </span>newtab</p>
+
+  <nav>
+    <ul>
+      <li>general</li>
+      <li><a href="https://reddit.com/">reddit</a></li>
+      <li><a href="https://www.theonion.com/">news</a></li>
+      <li><a href="https://send.firefox.com/">ff send</a></li>
+    </ul>
+
+    <ul>
+      <li>general</li>
+      <li><a href="https://mail.google.com/">gmail</a></li>
+      <li><a href="https://send.firefox.com/">ff send</a></li>
+    </ul>
+
+    <ul>
+      <li>dev</li>
+      <li><a href="https://www.github.com">github</a></li>
+      <li><a href="https://www.theonion.com/">stack overflow</a></li>
+    </ul>
+
+    <ul>
+      <li>home</li>
+      <li><a href="https://stpg.tk/">rent portal</a></li>
+      <li><a href="https://www.theonion.com/">shopping list</a></li>
+      <li><a href="https://send.firefox.com/">goals</a></li>
+    </ul>
+  </nav>
+
+  <p><span>alichtman@arctic > </span> <span id="cursor">_</span></p>
+</body>
+</html>
